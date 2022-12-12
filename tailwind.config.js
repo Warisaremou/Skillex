@@ -10,6 +10,7 @@ module.exports = {
     },
     fontFamily: {
       poppins: ["Poppins, sans-serif"],
+      varela: ["Varela , sans-serif"]
     },
     container: {
       center: true,
