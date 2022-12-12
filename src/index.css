@@ -10,20 +10,27 @@
 }
 
 .logo{
-    @apply font-bold text-2xl;
+    @apply font-bold text-2xl font-varela;
+}
+
+.toogle-menu{
+    @apply text-gray-700 text-2xl block lg:hidden cursor-pointer ;
+}
+.close{
+    @apply text-3xl absolute right-8 md:right-28 top-6 ;
 }
 
 .nav-bar {
-    @apply fixed top-0 left-0 w-full px-8 md:px-28 xl:px-32 py-6 items-center flex justify-between bg-gray-300;
+    @apply fixed top-0 left-0 w-full z-10 px-8 md:px-28 xl:px-32 py-6 items-center flex justify-between ;
 }
 .menu {
-    @apply flex flex-col lg:flex-row fixed z-50 lg:relative bg-white lg:bg-transparent top-0 bottom-0 left-0 h-full lg:h-auto w-64 md:w-80 lg:w-auto px-10 lg:px-0 lg:pl-0 pt-24 lg:pt-0;
+    @apply flex flex-col lg:flex-row items-center fixed z-50 lg:relative bg-white lg:bg-transparent top-0 bottom-0 h-full lg:h-auto w-full md:w-full lg:w-auto lg:px-0 lg:pl-0 pt-8 lg:pt-0 duration-500;
 }
 .nav-menu {
-    @apply flex flex-col lg:items-center lg:flex-row lg:mr-10 xl:mr-40 2xl:mr-72 pb-14 lg:pb-0;
+    @apply flex flex-col lg:items-center lg:flex-row lg:mr-10 xl:mr-40 2xl:mr-72 py-14 lg:py-0;
 }
 .nav-item {
-    @apply lg:pr-6 xl:px-8 py-6 lg:py-0 text-sm md:text-base font-semibold lg:font-medium;
+    @apply lg:pr-6 xl:px-8 py-6 lg:py-0 text-lg md:text-base font-semibold lg:font-medium;
 }
 .nav-link {
     @apply text-gray-700 pb-6 hover:text-active hover:border-b-0 lg:hover:border-b-2 hover:border-transparent md:hover:border-active duration-150;
@@ -34,7 +41,7 @@
 }
 
 .btn{
-    @apply block lg:inline;
+    @apply block lg:inline text-lg font-semibold lg:font-medium text-gray-700 ;
 }
 
 .btn-primary{
